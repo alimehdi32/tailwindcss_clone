@@ -10,6 +10,10 @@ module.exports = {
         margin: {
           '96': '24rem',
           'left': '45rem'
+        },
+        bottom: {
+          '96': '24rem',
+          'custom': '45rem'
         }
       },
     },
