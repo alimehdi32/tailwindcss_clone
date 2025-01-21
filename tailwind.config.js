@@ -2,20 +2,29 @@
 module.exports = {
   content: ["*.html"],
   theme: {
-    extend: {},
-  },
-  plugins: [
-    function ({ addUtilities }) {
-      const newUtilities = {
-        '.hide-scrollbar::-webkit-scrollbar': {
-          display: 'none',
+    extend: {
+      width: {
+        '96': '24rem', // 384px 
+        'custom': '95rem', // 480px // Add more custom widths as needed 
         },
-        '.hide-scrollbar': {
-          '-ms-overflow-style': 'none', // for Internet Explorer and Edge 
-          'scrollbar-width': 'none', // for Firefox 
-        },
-      };
-      addUtilities(newUtilities, ['responsive', 'hover']);
+        margin: {
+          '96': '24rem',
+          'left': '45rem'
+        }
+      },
     },
-  ],
-};
+    plugins: [
+      function ({ addUtilities }) {
+        const newUtilities = {
+          '.hide-scrollbar::-webkit-scrollbar': {
+            display: 'none',
+          },
+          '.hide-scrollbar': {
+            '-ms-overflow-style': 'none', // for Internet Explorer and Edge 
+            'scrollbar-width': 'none', // for Firefox 
+          },
+        };
+        addUtilities(newUtilities, ['responsive', 'hover']);
+      },
+    ],
+  };
