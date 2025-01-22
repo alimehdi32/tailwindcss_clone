@@ -14,6 +14,14 @@ module.exports = {
         bottom: {
           '96': '24rem',
           'custom': '45rem'
+        },
+        height: {
+          '96': '384px',
+          'custom': '350px'
+        },
+        borderRadius: {
+          'lg': '8px',
+          'rad': '500px'
         }
       },
     },
