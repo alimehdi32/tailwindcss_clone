@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       width: {
         '96': '24rem', // 384px 
-        'custom': '95rem', // 480px // Add more custom widths as needed 
+        'custom': '95rem', // 480px // Add more custom widths as needed
+        'wider': '1000rem', 
         },
         margin: {
           '96': '24rem',
@@ -22,6 +23,16 @@ module.exports = {
         borderRadius: {
           'lg': '8px',
           'rad': '500px'
+        },
+        padding: {
+          '96': '24rem',
+          'mid': '700rem'
+        },
+        backgroundImage: {
+          'img': "url('https://img.youtube.com/vi/v0mwbNhmlEA/maxresdefault.jpg')",
+        },
+        colors: {
+          navy: '#000080',
         }
       },
     },
